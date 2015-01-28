@@ -1,0 +1,5 @@
+# JGHSpotifySessionManager
+
+## License
+
+MIT
