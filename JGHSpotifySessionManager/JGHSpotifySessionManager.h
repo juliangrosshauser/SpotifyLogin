@@ -15,7 +15,7 @@
 @property (nonatomic) SPTSession *session;
 
 + (instancetype)sharedInstance;
-- (void)login;
++ (void)login;
 - (BOOL)handleAuthCallbackWithTriggeredAuthURL:(NSURL *)url;
 
 @end
