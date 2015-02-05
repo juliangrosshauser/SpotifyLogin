@@ -12,7 +12,6 @@
 @interface JGHSpotifySessionManager : NSObject
 
 @property (nonatomic, weak) id<JGHSpotifySessionManagerDelegate> delegate;
-@property (nonatomic) SPTSession *session;
 
 + (instancetype)sharedInstance;
 + (void)login;
