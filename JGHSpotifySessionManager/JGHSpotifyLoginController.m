@@ -32,8 +32,12 @@
 
 #pragma mark - JGHSpotifySessionManagerDelegate
 
-- (void)didLoginSuccessfully {
-    NSLog(@"Logged in successfully");
+- (void)createdSession:(SPTSession *)session withError:(NSError *)error {
+    if(error) {
+        NSLog(@"%@", error.localizedDescription);
+    } else {
+        NSLog(@"Successfully created session");
+    }
 }
 
 @end

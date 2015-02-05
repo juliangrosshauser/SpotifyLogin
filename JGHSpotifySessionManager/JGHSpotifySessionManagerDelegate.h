@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 Julian Grosshauser. All rights reserved.
 //
 
+#import <Spotify/Spotify.h>
+
 @protocol JGHSpotifySessionManagerDelegate <NSObject>
 
-- (void)didLoginSuccessfully;
+- (void)createdSession:(SPTSession *)session withError:(NSError *)error;
 
 @end

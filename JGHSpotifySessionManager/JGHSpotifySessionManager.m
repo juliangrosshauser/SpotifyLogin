@@ -55,13 +55,8 @@
          handleAuthCallbackWithTriggeredAuthURL:url
          tokenSwapServiceEndpointAtURL:[NSURL URLWithString:kJGHSpotifyTokenSwapURL]
          callback:^(NSError *error, SPTSession *session) {
-             if (error) {
-                 NSLog(@"Authentication error: %@", error);
-                 return;
-             }
-
              self.session = session;
-             [self.delegate didLoginSuccessfully];
+             [self.delegate createdSession:session withError:error];
          }];
 
         return YES;
