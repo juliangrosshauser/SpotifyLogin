@@ -16,6 +16,7 @@
 		B93598FB1A82CD1600840FCD /* JGHSpotifyLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598F91A82CD1600840FCD /* JGHSpotifyLoginController.m */; };
 		B93599011A82D05E00840FCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599001A82D05E00840FCD /* AVFoundation.framework */; };
 		B93599041A82D7F000840FCD /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599031A82D7F000840FCD /* Spotify.framework */; };
+		B9FA9EAD1A857A2B00374307 /* JGHSpotifySessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		B93598FF1A82CF5300840FCD /* JGHSpotifySessionManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGHSpotifySessionManager-Prefix.pch"; sourceTree = "<group>"; };
 		B93599001A82D05E00840FCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B93599031A82D7F000840FCD /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		B9FA9EAB1A857A2B00374307 /* JGHSpotifySessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionController.h; sourceTree = "<group>"; };
+		B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				B93598F71A82CD1600840FCD /* JGHSpotifyConstants.m */,
 				B93598F81A82CD1600840FCD /* JGHSpotifyLoginController.h */,
 				B93598F91A82CD1600840FCD /* JGHSpotifyLoginController.m */,
+				B9FA9EAB1A857A2B00374307 /* JGHSpotifySessionController.h */,
+				B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */,
 				B93598F21A82CC7000840FCD /* JGHSpotifySessionManager.h */,
 				B93598F31A82CC7000840FCD /* JGHSpotifySessionManager.m */,
 				B93598F41A82CC7000840FCD /* JGHSpotifySessionManagerDelegate.h */,
@@ -187,6 +192,7 @@
 				B93598FB1A82CD1600840FCD /* JGHSpotifyLoginController.m in Sources */,
 				B93598F51A82CC7000840FCD /* JGHSpotifySessionManager.m in Sources */,
 				B93598CF1A82CAE700840FCD /* main.m in Sources */,
+				B9FA9EAD1A857A2B00374307 /* JGHSpotifySessionController.m in Sources */,
 				B93598FA1A82CD1600840FCD /* JGHSpotifyConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
