@@ -14,7 +14,7 @@
 @property (nonatomic, weak) id<JGHSpotifySessionManagerDelegate> delegate;
 
 + (instancetype)sharedInstance;
-+ (void)login;
++ (void)createSession;
 - (BOOL)handleAuthCallbackWithTriggeredAuthURL:(NSURL *)url;
 
 @end

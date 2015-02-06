@@ -33,7 +33,7 @@
     return sharedInstance;
 }
 
-+ (void)login {
++ (void)createSession {
     // Create SPTAuth instance; create login URL and open it
     NSURL *loginURL = [[SPTAuth defaultInstance] loginURLForClientId:kJGHSpotifyClientID
                                                  declaredRedirectURL:[NSURL URLWithString:kJGHSpotifyCallbackURL]

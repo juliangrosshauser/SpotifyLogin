@@ -26,7 +26,7 @@
     [loginButton setTitle:NSLocalizedString(@"Login with Spotify", nil) forState:UIControlStateNormal];
     [loginButton sizeToFit];
     loginButton.center = self.view.center;
-    [loginButton addTarget:[JGHSpotifySessionManager class] action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+    [loginButton addTarget:[JGHSpotifySessionManager class] action:@selector(createSession) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginButton];
 }
 
