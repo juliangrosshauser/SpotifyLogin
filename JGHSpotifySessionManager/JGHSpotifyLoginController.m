@@ -34,7 +34,7 @@
 #pragma mark - JGHSpotifySessionManagerDelegate
 
 - (void)createdSession:(SPTSession *)session withError:(NSError *)error {
-    if(error) {
+    if (error) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Login Error", nil) message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil) style:UIAlertActionStyleDefault handler:nil];
         [alertController addAction:alertAction];
