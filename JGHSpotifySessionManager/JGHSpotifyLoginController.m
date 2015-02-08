@@ -15,6 +15,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         [JGHSpotifySessionManager sharedInstance].delegate = self;
+        self.title = NSLocalizedString(@"Login", nil);
     }
 
     return self;
