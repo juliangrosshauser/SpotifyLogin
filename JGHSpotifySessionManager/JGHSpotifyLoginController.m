@@ -8,6 +8,7 @@
 
 #import "JGHSpotifyLoginController.h"
 #import "JGHSpotifySessionManager.h"
+#import "JGHSpotifySessionController.h"
 
 @implementation JGHSpotifyLoginController
 
@@ -36,7 +37,8 @@
     if(error) {
         NSLog(@"%@", error.localizedDescription);
     } else {
-        NSLog(@"Successfully created session");
+        JGHSpotifySessionController *sessionController = [[JGHSpotifySessionController alloc] initWithSession:session];
+        [self.navigationController pushViewController:sessionController animated:YES];
     }
 }
 
