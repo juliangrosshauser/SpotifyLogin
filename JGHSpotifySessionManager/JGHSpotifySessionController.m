@@ -19,6 +19,8 @@
 - (instancetype)initWithSession:(SPTSession *)session {
     if (self = [super init]) {
         _session = session;
+        UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Logout", nil) style:UIBarButtonItemStylePlain target:self action:@selector(deleteSession)];
+        self.navigationItem.leftBarButtonItem = logoutButton;
     }
 
     return self;
@@ -32,6 +34,11 @@
     [label sizeToFit];
     label.center = self.view.center;
     [self.view addSubview:label];
+}
+
+- (void)deleteSession {
+    self.session = nil;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
