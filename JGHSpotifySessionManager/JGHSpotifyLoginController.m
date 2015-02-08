@@ -35,7 +35,10 @@
 
 - (void)createdSession:(SPTSession *)session withError:(NSError *)error {
     if(error) {
-        NSLog(@"%@", error.localizedDescription);
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Login Error", nil) message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil) style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:alertAction];
+        [self presentViewController:alertController animated:YES completion:nil];
     } else {
         JGHSpotifySessionController *sessionController = [[JGHSpotifySessionController alloc] initWithSession:session];
         [self.navigationController pushViewController:sessionController animated:YES];
