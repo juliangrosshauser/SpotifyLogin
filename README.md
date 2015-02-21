@@ -7,7 +7,7 @@
 
 Source: [Spotify iOS SDK Tutorial](https://developer.spotify.com/technologies/spotify-ios-sdk/tutorial)
 
-You can find all necessary files for this token exchange service in the [TokenSwapService](TokenSwapService) folder.  
+You can find all necessary files for this token exchange service in the [Token Swap Service](Token Swap Service) folder.  
 The only thing you need to add is the `secrets.rb` file. This file should contain the following:
 
 ```ruby
