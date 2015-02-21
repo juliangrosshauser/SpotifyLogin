@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B93598CF1A82CAE700840FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598CE1A82CAE700840FCD /* main.m */; };
-		B93598D21A82CAE700840FCD /* JGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598D11A82CAE700840FCD /* JGHAppDelegate.m */; };
-		B93598DA1A82CAE700840FCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93598D91A82CAE700840FCD /* Images.xcassets */; };
-		B93598DD1A82CAE700840FCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93598DB1A82CAE700840FCD /* LaunchScreen.xib */; };
-		B93598F51A82CC7000840FCD /* JGHSpotifySessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598F31A82CC7000840FCD /* JGHSpotifySessionManager.m */; };
-		B93598FA1A82CD1600840FCD /* JGHSpotifyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598F71A82CD1600840FCD /* JGHSpotifyConstants.m */; };
-		B93598FB1A82CD1600840FCD /* JGHSpotifyLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93598F91A82CD1600840FCD /* JGHSpotifyLoginController.m */; };
 		B93599011A82D05E00840FCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599001A82D05E00840FCD /* AVFoundation.framework */; };
 		B93599041A82D7F000840FCD /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599031A82D7F000840FCD /* Spotify.framework */; };
-		B9FA9EAD1A857A2B00374307 /* JGHSpotifySessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */; };
+		B97DCF7B1A990064008ECE4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DCF6A1A990064008ECE4E /* LaunchScreen.xib */; };
+		B97DCF7C1A990064008ECE4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97DCF6C1A990064008ECE4E /* Images.xcassets */; };
+		B97DCF7E1A990064008ECE4E /* JGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF6F1A990064008ECE4E /* JGHAppDelegate.m */; };
+		B97DCF7F1A990064008ECE4E /* JGHSpotifyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF711A990064008ECE4E /* JGHSpotifyConstants.m */; };
+		B97DCF801A990064008ECE4E /* JGHSpotifyLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF731A990064008ECE4E /* JGHSpotifyLoginController.m */; };
+		B97DCF811A990064008ECE4E /* JGHSpotifySessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF751A990064008ECE4E /* JGHSpotifySessionController.m */; };
+		B97DCF821A990064008ECE4E /* JGHSpotifySessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF781A990064008ECE4E /* JGHSpotifySessionManager.m */; };
+		B97DCF831A990064008ECE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF7A1A990064008ECE4E /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B93598C91A82CAE700840FCD /* JGHSpotifySessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGHSpotifySessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93598CD1A82CAE700840FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B93598CE1A82CAE700840FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B93598D01A82CAE700840FCD /* JGHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGHAppDelegate.h; sourceTree = "<group>"; };
-		B93598D11A82CAE700840FCD /* JGHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGHAppDelegate.m; sourceTree = "<group>"; };
-		B93598D91A82CAE700840FCD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B93598DC1A82CAE700840FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B93598F21A82CC7000840FCD /* JGHSpotifySessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManager.h; sourceTree = "<group>"; };
-		B93598F31A82CC7000840FCD /* JGHSpotifySessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionManager.m; sourceTree = "<group>"; };
-		B93598F41A82CC7000840FCD /* JGHSpotifySessionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManagerDelegate.h; sourceTree = "<group>"; };
-		B93598F61A82CD1600840FCD /* JGHSpotifyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyConstants.h; sourceTree = "<group>"; };
-		B93598F71A82CD1600840FCD /* JGHSpotifyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyConstants.m; sourceTree = "<group>"; };
-		B93598F81A82CD1600840FCD /* JGHSpotifyLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyLoginController.h; sourceTree = "<group>"; };
-		B93598F91A82CD1600840FCD /* JGHSpotifyLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyLoginController.m; sourceTree = "<group>"; };
-		B93598FF1A82CF5300840FCD /* JGHSpotifySessionManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGHSpotifySessionManager-Prefix.pch"; sourceTree = "<group>"; };
+		B93598C91A82CAE700840FCD /* Spotify Session Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Session Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93599001A82D05E00840FCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B93599031A82D7F000840FCD /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
-		B9FA9EAB1A857A2B00374307 /* JGHSpotifySessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionController.h; sourceTree = "<group>"; };
-		B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionController.m; sourceTree = "<group>"; };
+		B97DCF6B1A990064008ECE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B97DCF6C1A990064008ECE4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B97DCF6D1A990064008ECE4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97DCF6E1A990064008ECE4E /* JGHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHAppDelegate.h; sourceTree = "<group>"; };
+		B97DCF6F1A990064008ECE4E /* JGHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHAppDelegate.m; sourceTree = "<group>"; };
+		B97DCF701A990064008ECE4E /* JGHSpotifyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyConstants.h; sourceTree = "<group>"; };
+		B97DCF711A990064008ECE4E /* JGHSpotifyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyConstants.m; sourceTree = "<group>"; };
+		B97DCF721A990064008ECE4E /* JGHSpotifyLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyLoginController.h; sourceTree = "<group>"; };
+		B97DCF731A990064008ECE4E /* JGHSpotifyLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyLoginController.m; sourceTree = "<group>"; };
+		B97DCF741A990064008ECE4E /* JGHSpotifySessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionController.h; sourceTree = "<group>"; };
+		B97DCF751A990064008ECE4E /* JGHSpotifySessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionController.m; sourceTree = "<group>"; };
+		B97DCF761A990064008ECE4E /* JGHSpotifySessionManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGHSpotifySessionManager-Prefix.pch"; sourceTree = "<group>"; };
+		B97DCF771A990064008ECE4E /* JGHSpotifySessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManager.h; sourceTree = "<group>"; };
+		B97DCF781A990064008ECE4E /* JGHSpotifySessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionManager.m; sourceTree = "<group>"; };
+		B97DCF791A990064008ECE4E /* JGHSpotifySessionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManagerDelegate.h; sourceTree = "<group>"; };
+		B97DCF7A1A990064008ECE4E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		B93598C01A82CAE700840FCD = {
 			isa = PBXGroup;
 			children = (
-				B93598CB1A82CAE700840FCD /* JGHSpotifySessionManager */,
+				B97DCF691A990064008ECE4E /* Spotify Session Manager */,
 				B93598CA1A82CAE700840FCD /* Products */,
 				B93598FC1A82CDB600840FCD /* Frameworks */,
 				B93599021A82D7F000840FCD /* Vendor */,
@@ -67,40 +67,9 @@
 		B93598CA1A82CAE700840FCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B93598C91A82CAE700840FCD /* JGHSpotifySessionManager.app */,
+				B93598C91A82CAE700840FCD /* Spotify Session Manager.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B93598CB1A82CAE700840FCD /* JGHSpotifySessionManager */ = {
-			isa = PBXGroup;
-			children = (
-				B93598D01A82CAE700840FCD /* JGHAppDelegate.h */,
-				B93598D11A82CAE700840FCD /* JGHAppDelegate.m */,
-				B93598F61A82CD1600840FCD /* JGHSpotifyConstants.h */,
-				B93598F71A82CD1600840FCD /* JGHSpotifyConstants.m */,
-				B93598F81A82CD1600840FCD /* JGHSpotifyLoginController.h */,
-				B93598F91A82CD1600840FCD /* JGHSpotifyLoginController.m */,
-				B9FA9EAB1A857A2B00374307 /* JGHSpotifySessionController.h */,
-				B9FA9EAC1A857A2B00374307 /* JGHSpotifySessionController.m */,
-				B93598F21A82CC7000840FCD /* JGHSpotifySessionManager.h */,
-				B93598F31A82CC7000840FCD /* JGHSpotifySessionManager.m */,
-				B93598F41A82CC7000840FCD /* JGHSpotifySessionManagerDelegate.h */,
-				B93598FF1A82CF5300840FCD /* JGHSpotifySessionManager-Prefix.pch */,
-				B93598D91A82CAE700840FCD /* Images.xcassets */,
-				B93598DB1A82CAE700840FCD /* LaunchScreen.xib */,
-				B93598CC1A82CAE700840FCD /* Supporting Files */,
-			);
-			path = JGHSpotifySessionManager;
-			sourceTree = "<group>";
-		};
-		B93598CC1A82CAE700840FCD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B93598CD1A82CAE700840FCD /* Info.plist */,
-				B93598CE1A82CAE700840FCD /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B93598FC1A82CDB600840FCD /* Frameworks */ = {
@@ -119,12 +88,35 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
+		B97DCF691A990064008ECE4E /* Spotify Session Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B97DCF6A1A990064008ECE4E /* LaunchScreen.xib */,
+				B97DCF6C1A990064008ECE4E /* Images.xcassets */,
+				B97DCF6D1A990064008ECE4E /* Info.plist */,
+				B97DCF6E1A990064008ECE4E /* JGHAppDelegate.h */,
+				B97DCF6F1A990064008ECE4E /* JGHAppDelegate.m */,
+				B97DCF701A990064008ECE4E /* JGHSpotifyConstants.h */,
+				B97DCF711A990064008ECE4E /* JGHSpotifyConstants.m */,
+				B97DCF721A990064008ECE4E /* JGHSpotifyLoginController.h */,
+				B97DCF731A990064008ECE4E /* JGHSpotifyLoginController.m */,
+				B97DCF741A990064008ECE4E /* JGHSpotifySessionController.h */,
+				B97DCF751A990064008ECE4E /* JGHSpotifySessionController.m */,
+				B97DCF761A990064008ECE4E /* JGHSpotifySessionManager-Prefix.pch */,
+				B97DCF771A990064008ECE4E /* JGHSpotifySessionManager.h */,
+				B97DCF781A990064008ECE4E /* JGHSpotifySessionManager.m */,
+				B97DCF791A990064008ECE4E /* JGHSpotifySessionManagerDelegate.h */,
+				B97DCF7A1A990064008ECE4E /* main.m */,
+			);
+			path = "Spotify Session Manager";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B93598C81A82CAE700840FCD /* JGHSpotifySessionManager */ = {
+		B93598C81A82CAE700840FCD /* Spotify Session Manager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "JGHSpotifySessionManager" */;
+			buildConfigurationList = B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "Spotify Session Manager" */;
 			buildPhases = (
 				B93598C51A82CAE700840FCD /* Sources */,
 				B93598C61A82CAE700840FCD /* Frameworks */,
@@ -134,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = JGHSpotifySessionManager;
+			name = "Spotify Session Manager";
 			productName = JGHSpotifySessionManager;
-			productReference = B93598C91A82CAE700840FCD /* JGHSpotifySessionManager.app */;
+			productReference = B93598C91A82CAE700840FCD /* Spotify Session Manager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "JGHSpotifySessionManager" */;
+			buildConfigurationList = B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "Spotify Session Manager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +158,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B93598C81A82CAE700840FCD /* JGHSpotifySessionManager */,
+				B93598C81A82CAE700840FCD /* Spotify Session Manager */,
 			);
 		};
 /* End PBXProject section */
@@ -176,8 +168,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93598DD1A82CAE700840FCD /* LaunchScreen.xib in Resources */,
-				B93598DA1A82CAE700840FCD /* Images.xcassets in Resources */,
+				B97DCF7B1A990064008ECE4E /* LaunchScreen.xib in Resources */,
+				B97DCF7C1A990064008ECE4E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,22 +180,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93598D21A82CAE700840FCD /* JGHAppDelegate.m in Sources */,
-				B93598FB1A82CD1600840FCD /* JGHSpotifyLoginController.m in Sources */,
-				B93598F51A82CC7000840FCD /* JGHSpotifySessionManager.m in Sources */,
-				B93598CF1A82CAE700840FCD /* main.m in Sources */,
-				B9FA9EAD1A857A2B00374307 /* JGHSpotifySessionController.m in Sources */,
-				B93598FA1A82CD1600840FCD /* JGHSpotifyConstants.m in Sources */,
+				B97DCF7F1A990064008ECE4E /* JGHSpotifyConstants.m in Sources */,
+				B97DCF801A990064008ECE4E /* JGHSpotifyLoginController.m in Sources */,
+				B97DCF7E1A990064008ECE4E /* JGHAppDelegate.m in Sources */,
+				B97DCF821A990064008ECE4E /* JGHSpotifySessionManager.m in Sources */,
+				B97DCF831A990064008ECE4E /* main.m in Sources */,
+				B97DCF811A990064008ECE4E /* JGHSpotifySessionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B93598DB1A82CAE700840FCD /* LaunchScreen.xib */ = {
+		B97DCF6A1A990064008ECE4E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B93598DC1A82CAE700840FCD /* Base */,
+				B97DCF6B1A990064008ECE4E /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -298,10 +290,11 @@
 					"$(PROJECT_DIR)/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/$(PRODUCT_NAME)-Prefix.pch";
-				INFOPLIST_FILE = JGHSpotifySessionManager/Info.plist;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/JGHSpotifySessionManager-Prefix.pch";
+				INFOPLIST_FILE = "$(PROJECT_NAME)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spotify Session Manager";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -314,17 +307,18 @@
 					"$(PROJECT_DIR)/Vendor",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/$(PRODUCT_NAME)-Prefix.pch";
-				INFOPLIST_FILE = JGHSpotifySessionManager/Info.plist;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/JGHSpotifySessionManager-Prefix.pch";
+				INFOPLIST_FILE = "$(PROJECT_NAME)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spotify Session Manager";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "JGHSpotifySessionManager" */ = {
+		B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "Spotify Session Manager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B93598EA1A82CAE800840FCD /* Debug */,
@@ -333,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "JGHSpotifySessionManager" */ = {
+		B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "Spotify Session Manager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B93598ED1A82CAE800840FCD /* Debug */,

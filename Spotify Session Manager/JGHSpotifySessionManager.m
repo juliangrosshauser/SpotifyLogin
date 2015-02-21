@@ -1,6 +1,6 @@
 //
 //  JGHSpotifySessionManager.m
-//  JGHSpotifySessionManager
+//  Spotify Session Manager
 //
 //  Created by Julian Grosshauser on 26/01/15.
 //  Copyright (c) 2015 Julian Grosshauser. All rights reserved.

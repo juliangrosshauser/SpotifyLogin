@@ -1,4 +1,4 @@
-# JGHSpotifySessionManager
+# Spotify Session Manager
 
 ## Token Swap Service
 
