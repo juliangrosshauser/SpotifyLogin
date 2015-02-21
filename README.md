@@ -36,4 +36,4 @@ After that you can run the service with `ruby spotify_token_swap.rb`.
 
 ## License
 
-MIT
+[MIT](LICENSE)
