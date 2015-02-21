@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B93599011A82D05E00840FCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599001A82D05E00840FCD /* AVFoundation.framework */; };
-		B93599041A82D7F000840FCD /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93599031A82D7F000840FCD /* Spotify.framework */; };
 		B97DCF7B1A990064008ECE4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DCF6A1A990064008ECE4E /* LaunchScreen.xib */; };
 		B97DCF7C1A990064008ECE4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97DCF6C1A990064008ECE4E /* Images.xcassets */; };
 		B97DCF7E1A990064008ECE4E /* JGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF6F1A990064008ECE4E /* JGHAppDelegate.m */; };
@@ -17,12 +15,12 @@
 		B97DCF811A990064008ECE4E /* JGHSpotifySessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF751A990064008ECE4E /* JGHSpotifySessionController.m */; };
 		B97DCF821A990064008ECE4E /* JGHSpotifySessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF781A990064008ECE4E /* JGHSpotifySessionManager.m */; };
 		B97DCF831A990064008ECE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DCF7A1A990064008ECE4E /* main.m */; };
+		B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF881A9903CC008ECE4E /* AVFoundation.framework */; };
+		B97DCF8C1A9903E2008ECE4E /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF861A9903C0008ECE4E /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B93598C91A82CAE700840FCD /* Spotify Session Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Session Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93599001A82D05E00840FCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B93599031A82D7F000840FCD /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		B97DCF6B1A990064008ECE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B97DCF6C1A990064008ECE4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B97DCF6D1A990064008ECE4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +37,8 @@
 		B97DCF781A990064008ECE4E /* JGHSpotifySessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionManager.m; sourceTree = "<group>"; };
 		B97DCF791A990064008ECE4E /* JGHSpotifySessionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManagerDelegate.h; sourceTree = "<group>"; };
 		B97DCF7A1A990064008ECE4E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B97DCF861A9903C0008ECE4E /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
+		B97DCF881A9903CC008ECE4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93599011A82D05E00840FCD /* AVFoundation.framework in Frameworks */,
-				B93599041A82D7F000840FCD /* Spotify.framework in Frameworks */,
+				B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */,
+				B97DCF8C1A9903E2008ECE4E /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +59,7 @@
 			children = (
 				B97DCF691A990064008ECE4E /* Spotify Session Manager */,
 				B93598CA1A82CAE700840FCD /* Products */,
-				B93598FC1A82CDB600840FCD /* Frameworks */,
-				B93599021A82D7F000840FCD /* Vendor */,
+				B97DCF8A1A9903D2008ECE4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,22 +69,6 @@
 				B93598C91A82CAE700840FCD /* Spotify Session Manager.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B93598FC1A82CDB600840FCD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B93599001A82D05E00840FCD /* AVFoundation.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		B93599021A82D7F000840FCD /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				B93599031A82D7F000840FCD /* Spotify.framework */,
-			);
-			path = Vendor;
 			sourceTree = "<group>";
 		};
 		B97DCF691A990064008ECE4E /* Spotify Session Manager */ = {
@@ -109,6 +92,15 @@
 				B97DCF7A1A990064008ECE4E /* main.m */,
 			);
 			path = "Spotify Session Manager";
+			sourceTree = "<group>";
+		};
+		B97DCF8A1A9903D2008ECE4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97DCF881A9903CC008ECE4E /* AVFoundation.framework */,
+				B97DCF861A9903C0008ECE4E /* Spotify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/JGHSpotifySessionManager-Prefix.pch";
@@ -304,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/JGHSpotifySessionManager-Prefix.pch";

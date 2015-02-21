@@ -1,5 +1,6 @@
 .DS_Store
 xcuserdata
 xcshareddata
+Carthage
 JGHSpotifyConstants.m
 TokenSwapService/secrets.rb
