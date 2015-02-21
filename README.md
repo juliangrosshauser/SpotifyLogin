@@ -1,5 +1,11 @@
 # Spotify Session Manager
 
+In order to run this project you need to checkout Spotify's iOS framework with [Carthage](https://github.com/Carthage/Carthage) first:
+
+```shell
+$ carthage update --no-build
+```
+
 ## Token Swap Service
 
 > The iOS SDK uses OAuth to authenticate the application user and to authorize your application to access the Spotify service.
