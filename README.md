@@ -1,4 +1,4 @@
-# Spotify Session Manager
+# SpotifySessionManager
 
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/devcenter/ios/index.action)
 [![License](https://img.shields.io/badge/license-MIT-3f3f3f.svg)](http://choosealicense.com/licenses/mit)
@@ -9,14 +9,14 @@ In order to run this project you need to checkout Spotify's iOS framework with [
 $ carthage update --no-build
 ```
 
-## Token Swap Service
+## TokenSwapService
 
 > The iOS SDK uses OAuth to authenticate the application user and to authorize your application to access the Spotify service.
 > You will you need to run a small HTTP service, called a token exchange service, to complete the authorization process.
 
 Source: [Spotify iOS SDK Tutorial](https://developer.spotify.com/technologies/spotify-ios-sdk/tutorial)
 
-You can find all necessary files for this token exchange service in the [Token Swap Service](Token Swap Service) folder.  
+You can find all necessary files for this token exchange service in the [TokenSwapService](TokenSwapService) folder.  
 The only thing you need to add is the `secrets.rb` file. This file should contain the following:
 
 ```ruby

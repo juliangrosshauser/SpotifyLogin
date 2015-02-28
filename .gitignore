@@ -3,4 +3,4 @@ xcuserdata
 xcshareddata
 Carthage
 JGHSpotifyConstants.m
-Token Swap Service/secrets.rb
+TokenSwapService/secrets.rb
