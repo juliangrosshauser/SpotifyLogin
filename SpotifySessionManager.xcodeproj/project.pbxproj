@@ -7,35 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B96EC78F1AA7B5B500578971 /* SpotifyLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC78E1AA7B5B500578971 /* SpotifyLoginController.swift */; };
+		B96EC7911AA7BDA500578971 /* SpotifySessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */; };
 		B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF881A9903CC008ECE4E /* AVFoundation.framework */; };
-		B97DCF8C1A9903E2008ECE4E /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF861A9903C0008ECE4E /* Spotify.framework */; };
-		B9BF7E1E1AA21ED60089D3FE /* JGHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E0A1AA21ED60089D3FE /* JGHAppDelegate.m */; };
-		B9BF7E1F1AA21ED60089D3FE /* JGHSpotifySessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E0D1AA21ED60089D3FE /* JGHSpotifySessionManager.m */; };
-		B9BF7E201AA21ED60089D3FE /* JGHSpotifyLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E111AA21ED60089D3FE /* JGHSpotifyLoginController.m */; };
-		B9BF7E211AA21ED60089D3FE /* JGHSpotifySessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E131AA21ED60089D3FE /* JGHSpotifySessionController.m */; };
-		B9BF7E221AA21ED60089D3FE /* JGHSpotifyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E161AA21ED60089D3FE /* JGHSpotifyConstants.m */; };
-		B9BF7E231AA21ED60089D3FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BF7E181AA21ED60089D3FE /* main.m */; };
+		B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */; };
+		B9B9A0281AA6817E00F81DB0 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF861A9903C0008ECE4E /* Spotify.framework */; };
+		B9B9A03C1AA682DE00F81DB0 /* SpotifySessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A0391AA682DE00F81DB0 /* SpotifySessionManager.swift */; };
+		B9B9A03D1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A03A1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift */; };
+		B9B9A03F1AA68AE900F81DB0 /* SpotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */; };
 		B9BF7E241AA21ED60089D3FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BF7E1A1AA21ED60089D3FE /* LaunchScreen.xib */; };
 		B9BF7E251AA21ED60089D3FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BF7E1C1AA21ED60089D3FE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B93598C91A82CAE700840FCD /* SpotifySessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifySessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96EC78E1AA7B5B500578971 /* SpotifyLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginController.swift; sourceTree = "<group>"; };
+		B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionController.swift; sourceTree = "<group>"; };
 		B97DCF861A9903C0008ECE4E /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
 		B97DCF881A9903CC008ECE4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		B9BF7E091AA21ED60089D3FE /* JGHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHAppDelegate.h; sourceTree = "<group>"; };
-		B9BF7E0A1AA21ED60089D3FE /* JGHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHAppDelegate.m; sourceTree = "<group>"; };
-		B9BF7E0C1AA21ED60089D3FE /* JGHSpotifySessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManager.h; sourceTree = "<group>"; };
-		B9BF7E0D1AA21ED60089D3FE /* JGHSpotifySessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionManager.m; sourceTree = "<group>"; };
-		B9BF7E0E1AA21ED60089D3FE /* JGHSpotifySessionManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionManagerDelegate.h; sourceTree = "<group>"; };
-		B9BF7E101AA21ED60089D3FE /* JGHSpotifyLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyLoginController.h; sourceTree = "<group>"; };
-		B9BF7E111AA21ED60089D3FE /* JGHSpotifyLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyLoginController.m; sourceTree = "<group>"; };
-		B9BF7E121AA21ED60089D3FE /* JGHSpotifySessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifySessionController.h; sourceTree = "<group>"; };
-		B9BF7E131AA21ED60089D3FE /* JGHSpotifySessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifySessionController.m; sourceTree = "<group>"; };
-		B9BF7E151AA21ED60089D3FE /* JGHSpotifyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGHSpotifyConstants.h; sourceTree = "<group>"; };
-		B9BF7E161AA21ED60089D3FE /* JGHSpotifyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGHSpotifyConstants.m; sourceTree = "<group>"; };
-		B9BF7E171AA21ED60089D3FE /* JGHSpotifySessionManager-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JGHSpotifySessionManager-Prefix.pch"; sourceTree = "<group>"; };
-		B9BF7E181AA21ED60089D3FE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9B9A0341AA6825D00F81DB0 /* SpotifySessionManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpotifySessionManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9B9A0391AA682DE00F81DB0 /* SpotifySessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionManager.swift; sourceTree = "<group>"; };
+		B9B9A03A1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionManagerDelegate.swift; sourceTree = "<group>"; };
+		B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyApp.swift; sourceTree = "<group>"; };
 		B9BF7E1B1AA21ED60089D3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B9BF7E1C1AA21ED60089D3FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B9BF7E1D1AA21ED60089D3FE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */,
-				B97DCF8C1A9903E2008ECE4E /* Spotify.framework in Frameworks */,
+				B9B9A0281AA6817E00F81DB0 /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +74,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B9B9A0351AA682DE00F81DB0 /* SpotifySessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				B9B9A0391AA682DE00F81DB0 /* SpotifySessionManager.swift */,
+				B9B9A03A1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift */,
+			);
+			path = SpotifySessionManager;
+			sourceTree = "<group>";
+		};
 		B9BF7E061AA21ED60089D3FE /* SpotifySessionManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B9BF7E081AA21ED60089D3FE /* Application */,
-				B9BF7E0B1AA21ED60089D3FE /* Spotify Session Manager */,
+				B9B9A0351AA682DE00F81DB0 /* SpotifySessionManager */,
 				B9BF7E0F1AA21ED60089D3FE /* View Controllers */,
 			);
 			path = Classes;
@@ -103,29 +106,16 @@
 		B9BF7E081AA21ED60089D3FE /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B9BF7E091AA21ED60089D3FE /* JGHAppDelegate.h */,
-				B9BF7E0A1AA21ED60089D3FE /* JGHAppDelegate.m */,
+				B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		B9BF7E0B1AA21ED60089D3FE /* Spotify Session Manager */ = {
-			isa = PBXGroup;
-			children = (
-				B9BF7E0C1AA21ED60089D3FE /* JGHSpotifySessionManager.h */,
-				B9BF7E0D1AA21ED60089D3FE /* JGHSpotifySessionManager.m */,
-				B9BF7E0E1AA21ED60089D3FE /* JGHSpotifySessionManagerDelegate.h */,
-			);
-			path = "Spotify Session Manager";
 			sourceTree = "<group>";
 		};
 		B9BF7E0F1AA21ED60089D3FE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B9BF7E101AA21ED60089D3FE /* JGHSpotifyLoginController.h */,
-				B9BF7E111AA21ED60089D3FE /* JGHSpotifyLoginController.m */,
-				B9BF7E121AA21ED60089D3FE /* JGHSpotifySessionController.h */,
-				B9BF7E131AA21ED60089D3FE /* JGHSpotifySessionController.m */,
+				B96EC78E1AA7B5B500578971 /* SpotifyLoginController.swift */,
+				B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -133,10 +123,8 @@
 		B9BF7E141AA21ED60089D3FE /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B9BF7E151AA21ED60089D3FE /* JGHSpotifyConstants.h */,
-				B9BF7E161AA21ED60089D3FE /* JGHSpotifyConstants.m */,
-				B9BF7E171AA21ED60089D3FE /* JGHSpotifySessionManager-Prefix.pch */,
-				B9BF7E181AA21ED60089D3FE /* main.m */,
+				B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */,
+				B9B9A0341AA6825D00F81DB0 /* SpotifySessionManager-Bridging-Header.h */,
 			);
 			path = "Other Sources";
 			sourceTree = "<group>";
@@ -220,12 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BF7E1E1AA21ED60089D3FE /* JGHAppDelegate.m in Sources */,
-				B9BF7E201AA21ED60089D3FE /* JGHSpotifyLoginController.m in Sources */,
-				B9BF7E221AA21ED60089D3FE /* JGHSpotifyConstants.m in Sources */,
-				B9BF7E1F1AA21ED60089D3FE /* JGHSpotifySessionManager.m in Sources */,
-				B9BF7E231AA21ED60089D3FE /* main.m in Sources */,
-				B9BF7E211AA21ED60089D3FE /* JGHSpotifySessionController.m in Sources */,
+				B96EC78F1AA7B5B500578971 /* SpotifyLoginController.swift in Sources */,
+				B9B9A03C1AA682DE00F81DB0 /* SpotifySessionManager.swift in Sources */,
+				B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */,
+				B9B9A03D1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift in Sources */,
+				B9B9A03F1AA68AE900F81DB0 /* SpotifyApp.swift in Sources */,
+				B96EC7911AA7BDA500578971 /* SpotifySessionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,15 +313,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/Other Sources/JGHSpotifySessionManager-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SpotifySessionManager;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/${PROJECT_NAME}/Other Sources/${PROJECT_NAME}-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -342,15 +333,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/Other Sources/JGHSpotifySessionManager-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SpotifySessionManager;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/${PROJECT_NAME}/Other Sources/${PROJECT_NAME}-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
