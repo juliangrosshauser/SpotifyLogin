@@ -1,1 +1,3 @@
 github "spotify/ios-sdk"
+github "ReactiveCocoa/ReactiveCocoa" ~> 2.4
+github "soffes/sskeychain" ~> 1.2
