@@ -25,6 +25,24 @@
 		B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionController.swift; sourceTree = "<group>"; };
 		B97DCF861A9903C0008ECE4E /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
 		B97DCF881A9903CC008ECE4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B988844D1AABC95A0051DB08 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		B988844F1AABC95A0051DB08 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B98884501AABC95A0051DB08 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		B98884511AABC95A0051DB08 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		B98884521AABC95A0051DB08 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		B98884541AABC95A0051DB08 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		B98884551AABC95A0051DB08 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		B98884561AABC95A0051DB08 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		B98884581AABC95A0051DB08 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		B98884591AABC95A0051DB08 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		B988845A1AABC95A0051DB08 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		B988845B1AABC95A0051DB08 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		B988845D1AABC95A0051DB08 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		B988845E1AABC95A0051DB08 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		B988845F1AABC95A0051DB08 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		B98884601AABC95A0051DB08 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		B98884611AABC95A0051DB08 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		B98884621AABC95A0051DB08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B9A0341AA6825D00F81DB0 /* SpotifySessionManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpotifySessionManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		B9B9A0391AA682DE00F81DB0 /* SpotifySessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionManager.swift; sourceTree = "<group>"; };
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B9BF7E061AA21ED60089D3FE /* SpotifySessionManager */,
+				B988844B1AABC95A0051DB08 /* Configurations */,
 				B93598CA1A82CAE700840FCD /* Products */,
 				B97DCF8A1A9903D2008ECE4E /* Frameworks */,
 			);
@@ -72,6 +91,72 @@
 				B97DCF861A9903C0008ECE4E /* Spotify.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B988844B1AABC95A0051DB08 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B988844C1AABC95A0051DB08 /* Base */,
+				B98884571AABC95A0051DB08 /* iOS */,
+				B988845C1AABC95A0051DB08 /* Mac OS X */,
+				B98884621AABC95A0051DB08 /* README.md */,
+			);
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		B988844C1AABC95A0051DB08 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B988844D1AABC95A0051DB08 /* Common.xcconfig */,
+				B988844E1AABC95A0051DB08 /* Configurations */,
+				B98884531AABC95A0051DB08 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B988844E1AABC95A0051DB08 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B988844F1AABC95A0051DB08 /* Debug.xcconfig */,
+				B98884501AABC95A0051DB08 /* Profile.xcconfig */,
+				B98884511AABC95A0051DB08 /* Release.xcconfig */,
+				B98884521AABC95A0051DB08 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		B98884531AABC95A0051DB08 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				B98884541AABC95A0051DB08 /* Application.xcconfig */,
+				B98884551AABC95A0051DB08 /* Framework.xcconfig */,
+				B98884561AABC95A0051DB08 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		B98884571AABC95A0051DB08 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B98884581AABC95A0051DB08 /* iOS-Application.xcconfig */,
+				B98884591AABC95A0051DB08 /* iOS-Base.xcconfig */,
+				B988845A1AABC95A0051DB08 /* iOS-Framework.xcconfig */,
+				B988845B1AABC95A0051DB08 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B988845C1AABC95A0051DB08 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				B988845D1AABC95A0051DB08 /* Mac-Application.xcconfig */,
+				B988845E1AABC95A0051DB08 /* Mac-Base.xcconfig */,
+				B988845F1AABC95A0051DB08 /* Mac-DynamicLibrary.xcconfig */,
+				B98884601AABC95A0051DB08 /* Mac-Framework.xcconfig */,
+				B98884611AABC95A0051DB08 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
 		B9B9A0351AA682DE00F81DB0 /* SpotifySessionManager */ = {
@@ -233,6 +318,7 @@
 /* Begin XCBuildConfiguration section */
 		B93598EA1A82CAE800840FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B988844F1AABC95A0051DB08 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -275,6 +361,7 @@
 		};
 		B93598EB1A82CAE800840FCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98884511AABC95A0051DB08 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -311,6 +398,7 @@
 		};
 		B93598ED1A82CAE800840FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98884581AABC95A0051DB08 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -331,6 +419,7 @@
 		};
 		B93598EE1A82CAE800840FCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98884581AABC95A0051DB08 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
