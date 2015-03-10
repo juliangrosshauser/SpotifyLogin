@@ -34,6 +34,42 @@ Before you can run the service, make sure you have [`bundler`](http://bundler.io
 To install the service's dependencies run `bundle install`.  
 After that you can run the service with `ruby spotify_token_swap.rb`.
 
+## Architecture
+
+```
+                                                                                                      
+                                         ┌──────────────────────┐           ┌────────────────────────┐
+                                         │                      │           │                        │
+          ┌─────────────┐     openURL    │      LoginView       │           │      SpotifyView       │
+          │             │◀───────────────┤                      │           │                        │
+          │ AppDelegate │                ├──────────────────────┼──────────▶├────────────────────────┤
+          │             ├───────────────▶│                      │           │                        │
+          └─────────────┘                │ LoginViewController  │           │ SpotifyViewController  │
+ handleAuthCallBackWithTriggeredAuthURL  │                      │           │                        │
+                                         └──────────────────────┘           └────────────────────────┘
+                                                  ▲  │                                                
+                                                  │  │                                                
+                                                  │  │                                                
+                                                  │  │ set session                                    
+                           session changed signal │  │                                                
+                                                  │  │                                                
+                                                  │  ▼                                                
+                                    ┌─────────────┴──────────────────┐                                
+                                    │                                │                                
+                                    │        User (Singleton)        │                                
+                                    │                                │                                
+                                    └─────┬────┬───────────────┬─────┘                                
+                                          │    │ get user   ▲  │                                      
+                                save user │    │            │  │ refresh token                        
+                                          │    │   new token│  │                                      
+                                          ▼    ▼            │  ▼                                      
+                                       ┌──────────┐  ┌──────┴───────────┐                             
+                                       │          │  │                  │                             
+                                       │ Keychain │  │Token Swap Service│                             
+                                       │          │  │                  │                             
+                                       └──────────┘  └──────────────────┘                             
+```
+
 ## License
 
 [MIT](LICENSE)
