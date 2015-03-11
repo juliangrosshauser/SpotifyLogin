@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        return SpotifySessionManager.sharedInstance.handleAuthCallBackWithTriggeredAuthURL(url)
+        if let
+            window = self.window,
+            rootViewController = window.rootViewController as? UINavigationController,
+            loginController = rootViewController.topViewController as? LoginController {
+                return loginController.handleAuthCallBackWithTriggeredAuthURL(url)
+        }
+
+        return false;
     }
 }
