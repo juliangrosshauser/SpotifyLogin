@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpotifyLoginController: UIViewController, SpotifySessionManagerDelegate {
+class LoginController: UIViewController, SpotifySessionManagerDelegate {
 
     //MARK: Initialization
 
