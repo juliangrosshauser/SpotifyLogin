@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B96EC7911AA7BDA500578971 /* SpotifySessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */; };
 		B96EC78F1AA7B5B500578971 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC78E1AA7B5B500578971 /* LoginController.swift */; };
+		B96EC7911AA7BDA500578971 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC7901AA7BDA500578971 /* SpotifyController.swift */; };
 		B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF881A9903CC008ECE4E /* AVFoundation.framework */; };
 		B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */; };
 		B9B9A0281AA6817E00F81DB0 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF861A9903C0008ECE4E /* Spotify.framework */; };
@@ -21,8 +21,8 @@
 
 /* Begin PBXFileReference section */
 		B93598C91A82CAE700840FCD /* SpotifySessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifySessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifySessionController.swift; sourceTree = "<group>"; };
 		B96EC78E1AA7B5B500578971 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B96EC7901AA7BDA500578971 /* SpotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
 		B97DCF861A9903C0008ECE4E /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
 		B97DCF881A9903CC008ECE4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B988844D1AABC95A0051DB08 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -199,8 +199,8 @@
 		B9BF7E0F1AA21ED60089D3FE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B96EC7901AA7BDA500578971 /* SpotifySessionController.swift */,
 				B96EC78E1AA7B5B500578971 /* LoginController.swift */,
+				B96EC7901AA7BDA500578971 /* SpotifyController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */,
 				B9B9A03D1AA682DE00F81DB0 /* SpotifySessionManagerDelegate.swift in Sources */,
 				B9B9A03F1AA68AE900F81DB0 /* SpotifyApp.swift in Sources */,
-				B96EC7911AA7BDA500578971 /* SpotifySessionController.swift in Sources */,
+				B96EC7911AA7BDA500578971 /* SpotifyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

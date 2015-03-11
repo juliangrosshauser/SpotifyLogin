@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpotifySessionController: UIViewController {
+class SpotifyController: UIViewController {
 
     //MARK: Properties
 
