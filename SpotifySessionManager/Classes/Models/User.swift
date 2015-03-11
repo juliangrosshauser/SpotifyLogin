@@ -9,7 +9,7 @@
 class User {
 
     //MARK: Properties
-    
+
     static let sharedInstance: User = User(session: nil)
     var session: SPTSession?
 
