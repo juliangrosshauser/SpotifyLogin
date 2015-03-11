@@ -56,7 +56,7 @@ class LoginController: UIViewController {
                 } else {
                     User.sharedInstance.session = session
 
-                    self.navigationController?.pushViewController(SpotifyController(session: session), animated: true)
+                    self.navigationController?.pushViewController(SpotifyController(), animated: true)
                 }
             }
 

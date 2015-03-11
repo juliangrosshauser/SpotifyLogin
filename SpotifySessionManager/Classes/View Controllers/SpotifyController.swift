@@ -10,16 +10,10 @@ import UIKit
 
 class SpotifyController: UIViewController {
 
-    //MARK: Properties
-
-    private var session: SPTSession?
-
     //MARK: Initialization
 
-    init(session: SPTSession) {
+    override init() {
         super.init(nibName: nil, bundle: nil)
-
-        self.session = session
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -41,7 +35,7 @@ class SpotifyController: UIViewController {
     //MARK: SpotifySessionController
 
     func deleteSession() {
-        self.session = nil
+        User.sharedInstance.session = nil;
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
