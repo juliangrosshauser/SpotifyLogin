@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window = self.window,
             rootViewController = window.rootViewController as? UINavigationController,
             loginController = rootViewController.topViewController as? LoginController {
-                return loginController.handleAuthCallBackWithTriggeredAuthURL(url)
+                return loginController.viewModel.handleAuthCallBackWithTriggeredAuthURL(url)
         }
 
         return false;
