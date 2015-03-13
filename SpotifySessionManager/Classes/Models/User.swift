@@ -10,8 +10,22 @@ class User {
 
     //MARK: Properties
 
+    static let sessionUpdatedNotification: String = "SessionUpdatedNotification"
+    static let sessionRemovedNotification: String = "SessionRemovedNotification"
+
     static let sharedInstance: User = User(session: nil)
-    var session: SPTSession?
+
+    var session: SPTSession? {
+        didSet {
+            let notificationCenter = NSNotificationCenter.defaultCenter()
+
+            if let newSession = session {
+                notificationCenter.postNotificationName(User.sessionUpdatedNotification, object: nil)
+            } else {
+                notificationCenter.postNotificationName(User.sessionRemovedNotification, object: nil)
+            }
+        }
+    }
 
     //MARK: Initialization
 

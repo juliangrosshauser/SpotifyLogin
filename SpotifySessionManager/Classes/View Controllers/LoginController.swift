@@ -30,6 +30,14 @@ class LoginController: UIViewController {
 
             self.presentViewController(alertController, animated: true, completion: nil)
         }
+
+        notificationCenter.addObserverForName(User.sessionUpdatedNotification, object: nil, queue: nil) { (notification) in
+            self.navigationController?.pushViewController(SpotifyController(), animated: true)
+        }
+
+        notificationCenter.addObserverForName(User.sessionRemovedNotification, object: nil, queue: nil) { (notification) in
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        }
     }
 
     required init(coder aDecoder: NSCoder) {
