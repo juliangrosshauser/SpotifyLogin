@@ -30,12 +30,15 @@ class SpotifyController: UIViewController {
         label.sizeToFit()
         label.center = self.view.center
         self.view.addSubview(label)
+
+        let logoutButton: UIBarButtonItem = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "deleteSession")
+        self.navigationItem.leftBarButtonItem = logoutButton
     }
 
     //MARK: SpotifySessionController
 
+    @objc
     func deleteSession() {
         User.sharedInstance.session = nil;
-        self.navigationController?.popViewControllerAnimated(true)
     }
 }
