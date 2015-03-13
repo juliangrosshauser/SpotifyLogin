@@ -7,6 +7,7 @@
 //
 
 class LoginViewModel {
+    let loginFailedNotification: String = "LoginFailedNotification"
 
     @objc
     func createSession() {
@@ -22,7 +23,8 @@ class LoginViewModel {
             SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, tokenSwapServiceEndpointAtURL: NSURL(string: SpotifyApp.tokenSwapURL)) {
                 (error, session) in
                 if let sessionCreationError = error {
-                    NSLog("Error during session creation")
+                    let notificationCenter = NSNotificationCenter.defaultCenter()
+                    notificationCenter.postNotificationName(self.loginFailedNotification, object: error)
                 } else {
                     User.sharedInstance.session = session
                 }

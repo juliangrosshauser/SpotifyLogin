@@ -18,6 +18,18 @@ class LoginController: UIViewController {
         super.init(nibName: nil, bundle: nil)
 
         self.title = "Login with Spotify"
+
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        
+        notificationCenter.addObserverForName(self.viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
+            let error: NSError = notification.object as! NSError!
+
+            let alertController: UIAlertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+            let alertAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alertController.addAction(alertAction)
+
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
 
     required init(coder aDecoder: NSCoder) {
