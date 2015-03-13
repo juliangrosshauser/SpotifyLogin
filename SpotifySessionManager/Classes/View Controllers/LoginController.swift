@@ -10,6 +10,8 @@ import UIKit
 
 class LoginController: UIViewController {
 
+    //MARK: Properties
+
     let viewModel: LoginViewModel = LoginViewModel()
 
     //MARK: Initialization

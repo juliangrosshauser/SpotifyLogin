@@ -7,7 +7,12 @@
 //
 
 class LoginViewModel {
+
+    //MARK: Properties
+
     let loginFailedNotification: String = "LoginFailedNotification"
+
+    //MARK: Login
 
     @objc
     func createSession() {

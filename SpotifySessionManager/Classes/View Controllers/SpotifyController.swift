@@ -35,7 +35,7 @@ class SpotifyController: UIViewController {
         self.navigationItem.leftBarButtonItem = logoutButton
     }
 
-    //MARK: SpotifyController
+    //MARK: Session Lifecycle
 
     @objc
     func logout() {
