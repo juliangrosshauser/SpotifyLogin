@@ -31,14 +31,14 @@ class SpotifyController: UIViewController {
         label.center = self.view.center
         self.view.addSubview(label)
 
-        let logoutButton: UIBarButtonItem = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "deleteSession")
+        let logoutButton: UIBarButtonItem = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout")
         self.navigationItem.leftBarButtonItem = logoutButton
     }
 
     //MARK: SpotifySessionController
 
     @objc
-    func deleteSession() {
+    func logout() {
         User.sharedInstance.session = nil;
     }
 }
