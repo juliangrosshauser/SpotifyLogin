@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SpotifySessionManager.xcodeproj">
+      location = "self:SpotifyLogin.xcodeproj">
    </FileRef>
 </Workspace>

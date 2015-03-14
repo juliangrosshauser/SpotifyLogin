@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B96EC78F1AA7B5B500578971 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC78E1AA7B5B500578971 /* LoginController.swift */; };
-		B96EC7911AA7BDA500578971 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96EC7901AA7BDA500578971 /* SpotifyController.swift */; };
 		B97DCF8B1A9903E2008ECE4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF881A9903CC008ECE4E /* AVFoundation.framework */; };
-		B98A8BC61AB0FC5B0039AC85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A8BC51AB0FC5B0039AC85 /* User.swift */; };
-		B9ADA4B51AB23CF100FFCAB4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADA4B41AB23CF100FFCAB4 /* LoginViewModel.swift */; };
-		B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */; };
 		B9B9A0281AA6817E00F81DB0 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97DCF861A9903C0008ECE4E /* Spotify.framework */; };
-		B9B9A03F1AA68AE900F81DB0 /* SpotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */; };
-		B9BF7E241AA21ED60089D3FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BF7E1A1AA21ED60089D3FE /* LaunchScreen.xib */; };
-		B9BF7E251AA21ED60089D3FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BF7E1C1AA21ED60089D3FE /* Images.xcassets */; };
+		B9F8B49F1AB494FE00BA8637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B48F1AB494FE00BA8637 /* AppDelegate.swift */; };
+		B9F8B4A01AB494FE00BA8637 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B4911AB494FE00BA8637 /* User.swift */; };
+		B9F8B4A11AB494FE00BA8637 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B4931AB494FE00BA8637 /* LoginController.swift */; };
+		B9F8B4A21AB494FE00BA8637 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B4941AB494FE00BA8637 /* SpotifyController.swift */; };
+		B9F8B4A31AB494FE00BA8637 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B4961AB494FE00BA8637 /* LoginViewModel.swift */; };
+		B9F8B4A41AB494FE00BA8637 /* SpotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8B4981AB494FE00BA8637 /* SpotifyApp.swift */; };
+		B9F8B4A51AB494FE00BA8637 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F8B49B1AB494FE00BA8637 /* LaunchScreen.xib */; };
+		B9F8B4A61AB494FE00BA8637 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F8B49D1AB494FE00BA8637 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B93598C91A82CAE700840FCD /* SpotifySessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifySessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96EC78E1AA7B5B500578971 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		B96EC7901AA7BDA500578971 /* SpotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
+		B93598C91A82CAE700840FCD /* SpotifyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97DCF861A9903C0008ECE4E /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "Carthage/Checkouts/ios-sdk/Spotify.framework"; sourceTree = "<group>"; };
 		B97DCF881A9903CC008ECE4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B988844D1AABC95A0051DB08 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -43,14 +41,16 @@
 		B98884601AABC95A0051DB08 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		B98884611AABC95A0051DB08 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		B98884621AABC95A0051DB08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B98A8BC51AB0FC5B0039AC85 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SpotifySessionManager/Classes/Models/User.swift; sourceTree = "<group>"; };
-		B9ADA4B41AB23CF100FFCAB4 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9B9A0341AA6825D00F81DB0 /* SpotifySessionManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpotifySessionManager-Bridging-Header.h"; sourceTree = "<group>"; };
-		B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyApp.swift; sourceTree = "<group>"; };
-		B9BF7E1B1AA21ED60089D3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B9BF7E1C1AA21ED60089D3FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B9BF7E1D1AA21ED60089D3FE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F8B48F1AB494FE00BA8637 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9F8B4911AB494FE00BA8637 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B9F8B4931AB494FE00BA8637 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B9F8B4941AB494FE00BA8637 /* SpotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
+		B9F8B4961AB494FE00BA8637 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B9F8B4981AB494FE00BA8637 /* SpotifyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyApp.swift; sourceTree = "<group>"; };
+		B9F8B4991AB494FE00BA8637 /* SpotifyLogin-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpotifyLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9F8B49C1AB494FE00BA8637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B9F8B49D1AB494FE00BA8637 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9F8B49E1AB494FE00BA8637 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 		B93598C01A82CAE700840FCD = {
 			isa = PBXGroup;
 			children = (
-				B9BF7E061AA21ED60089D3FE /* SpotifySessionManager */,
+				B9F8B48C1AB494FE00BA8637 /* SpotifyLogin */,
 				B988844B1AABC95A0051DB08 /* Configurations */,
 				B93598CA1A82CAE700840FCD /* Products */,
 				B97DCF8A1A9903D2008ECE4E /* Frameworks */,
@@ -79,7 +79,7 @@
 		B93598CA1A82CAE700840FCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B93598C91A82CAE700840FCD /* SpotifySessionManager.app */,
+				B93598C91A82CAE700840FCD /* SpotifyLogin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,76 +159,75 @@
 			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
-		B98A8BC71AB0FC660039AC85 /* Models */ = {
+		B9F8B48C1AB494FE00BA8637 /* SpotifyLogin */ = {
 			isa = PBXGroup;
 			children = (
-				B98A8BC51AB0FC5B0039AC85 /* User.swift */,
+				B9F8B48D1AB494FE00BA8637 /* Classes */,
+				B9F8B4971AB494FE00BA8637 /* Other Sources */,
+				B9F8B49A1AB494FE00BA8637 /* Resources */,
 			);
-			name = Models;
-			path = ../..;
+			path = SpotifyLogin;
 			sourceTree = "<group>";
 		};
-		B9ADA4B31AB23CF100FFCAB4 /* View Models */ = {
+		B9F8B48D1AB494FE00BA8637 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B9ADA4B41AB23CF100FFCAB4 /* LoginViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
-		B9BF7E061AA21ED60089D3FE /* SpotifySessionManager */ = {
-			isa = PBXGroup;
-			children = (
-				B9BF7E071AA21ED60089D3FE /* Classes */,
-				B9BF7E141AA21ED60089D3FE /* Other Sources */,
-				B9BF7E191AA21ED60089D3FE /* Resources */,
-			);
-			path = SpotifySessionManager;
-			sourceTree = "<group>";
-		};
-		B9BF7E071AA21ED60089D3FE /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B9BF7E081AA21ED60089D3FE /* Application */,
-				B9BF7E0F1AA21ED60089D3FE /* View Controllers */,
-				B9ADA4B31AB23CF100FFCAB4 /* View Models */,
-				B98A8BC71AB0FC660039AC85 /* Models */,
+				B9F8B48E1AB494FE00BA8637 /* Application */,
+				B9F8B4901AB494FE00BA8637 /* Models */,
+				B9F8B4921AB494FE00BA8637 /* View Controllers */,
+				B9F8B4951AB494FE00BA8637 /* View Models */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		B9BF7E081AA21ED60089D3FE /* Application */ = {
+		B9F8B48E1AB494FE00BA8637 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B9B9A0221AA67CFF00F81DB0 /* AppDelegate.swift */,
+				B9F8B48F1AB494FE00BA8637 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		B9BF7E0F1AA21ED60089D3FE /* View Controllers */ = {
+		B9F8B4901AB494FE00BA8637 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B96EC78E1AA7B5B500578971 /* LoginController.swift */,
-				B96EC7901AA7BDA500578971 /* SpotifyController.swift */,
+				B9F8B4911AB494FE00BA8637 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9F8B4921AB494FE00BA8637 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9F8B4931AB494FE00BA8637 /* LoginController.swift */,
+				B9F8B4941AB494FE00BA8637 /* SpotifyController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		B9BF7E141AA21ED60089D3FE /* Other Sources */ = {
+		B9F8B4951AB494FE00BA8637 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				B9B9A03E1AA68AE900F81DB0 /* SpotifyApp.swift */,
-				B9B9A0341AA6825D00F81DB0 /* SpotifySessionManager-Bridging-Header.h */,
+				B9F8B4961AB494FE00BA8637 /* LoginViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B9F8B4971AB494FE00BA8637 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B9F8B4981AB494FE00BA8637 /* SpotifyApp.swift */,
+				B9F8B4991AB494FE00BA8637 /* SpotifyLogin-Bridging-Header.h */,
 			);
 			path = "Other Sources";
 			sourceTree = "<group>";
 		};
-		B9BF7E191AA21ED60089D3FE /* Resources */ = {
+		B9F8B49A1AB494FE00BA8637 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9BF7E1A1AA21ED60089D3FE /* LaunchScreen.xib */,
-				B9BF7E1C1AA21ED60089D3FE /* Images.xcassets */,
-				B9BF7E1D1AA21ED60089D3FE /* Info.plist */,
+				B9F8B49B1AB494FE00BA8637 /* LaunchScreen.xib */,
+				B9F8B49D1AB494FE00BA8637 /* Images.xcassets */,
+				B9F8B49E1AB494FE00BA8637 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -236,9 +235,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B93598C81A82CAE700840FCD /* SpotifySessionManager */ = {
+		B93598C81A82CAE700840FCD /* SpotifyLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "SpotifySessionManager" */;
+			buildConfigurationList = B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "SpotifyLogin" */;
 			buildPhases = (
 				B93598C51A82CAE700840FCD /* Sources */,
 				B93598C61A82CAE700840FCD /* Frameworks */,
@@ -248,9 +247,9 @@
 			);
 			dependencies = (
 			);
-			name = SpotifySessionManager;
+			name = SpotifyLogin;
 			productName = JGHSpotifySessionManager;
-			productReference = B93598C91A82CAE700840FCD /* SpotifySessionManager.app */;
+			productReference = B93598C91A82CAE700840FCD /* SpotifyLogin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "SpotifySessionManager" */;
+			buildConfigurationList = B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "SpotifyLogin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,7 +279,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B93598C81A82CAE700840FCD /* SpotifySessionManager */,
+				B93598C81A82CAE700840FCD /* SpotifyLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -290,8 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BF7E241AA21ED60089D3FE /* LaunchScreen.xib in Resources */,
-				B9BF7E251AA21ED60089D3FE /* Images.xcassets in Resources */,
+				B9F8B4A51AB494FE00BA8637 /* LaunchScreen.xib in Resources */,
+				B9F8B4A61AB494FE00BA8637 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,22 +301,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96EC78F1AA7B5B500578971 /* LoginController.swift in Sources */,
-				B9B9A0231AA67CFF00F81DB0 /* AppDelegate.swift in Sources */,
-				B9ADA4B51AB23CF100FFCAB4 /* LoginViewModel.swift in Sources */,
-				B9B9A03F1AA68AE900F81DB0 /* SpotifyApp.swift in Sources */,
-				B98A8BC61AB0FC5B0039AC85 /* User.swift in Sources */,
-				B96EC7911AA7BDA500578971 /* SpotifyController.swift in Sources */,
+				B9F8B4A21AB494FE00BA8637 /* SpotifyController.swift in Sources */,
+				B9F8B4A01AB494FE00BA8637 /* User.swift in Sources */,
+				B9F8B4A41AB494FE00BA8637 /* SpotifyApp.swift in Sources */,
+				B9F8B4A11AB494FE00BA8637 /* LoginController.swift in Sources */,
+				B9F8B4A31AB494FE00BA8637 /* LoginViewModel.swift in Sources */,
+				B9F8B49F1AB494FE00BA8637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B9BF7E1A1AA21ED60089D3FE /* LaunchScreen.xib */ = {
+		B9F8B49B1AB494FE00BA8637 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B9BF7E1B1AA21ED60089D3FE /* Base */,
+				B9F8B49C1AB494FE00BA8637 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -419,7 +418,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SpotifySessionManager;
+				PRODUCT_NAME = SpotifyLogin;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/${PROJECT_NAME}/Other Sources/${PROJECT_NAME}-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,7 +439,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(PROJECT_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SpotifySessionManager;
+				PRODUCT_NAME = SpotifyLogin;
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/${PROJECT_NAME}/Other Sources/${PROJECT_NAME}-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "SpotifySessionManager" */ = {
+		B93598C41A82CAE700840FCD /* Build configuration list for PBXProject "SpotifyLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B93598EA1A82CAE800840FCD /* Debug */,
@@ -458,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "SpotifySessionManager" */ = {
+		B93598EC1A82CAE800840FCD /* Build configuration list for PBXNativeTarget "SpotifyLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B93598ED1A82CAE800840FCD /* Debug */,
