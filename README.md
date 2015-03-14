@@ -37,37 +37,47 @@ After that you can run the service with `ruby spotify_token_swap.rb`.
 ## Architecture
 
 ```
-                                                                                                      
-                                         ┌──────────────────────┐           ┌────────────────────────┐
-                                         │                      │           │                        │
-          ┌─────────────┐     openURL    │      LoginView       │           │      SpotifyView       │
-          │             │◀───────────────┤                      │           │                        │
-          │ AppDelegate │                ├──────────────────────┼──────────▶├────────────────────────┤
-          │             ├───────────────▶│                      │           │                        │
-          └─────────────┘                │ LoginViewController  │           │ SpotifyViewController  │
- handleAuthCallBackWithTriggeredAuthURL  │                      │           │                        │
-                                         └──────────────────────┘           └────────────────────────┘
-                                                  ▲  │                                                
-                                                  │  │                                                
-                                                  │  │                                                
-                                                  │  │ set session                                    
-                           session changed signal │  │                                                
-                                                  │  │                                                
-                                                  │  ▼                                                
-                                    ┌─────────────┴──────────────────┐                                
-                                    │                                │                                
-                                    │        User (Singleton)        │                                
-                                    │                                │                                
-                                    └─────┬────┬───────────────┬─────┘                                
-                                          │    │ get user   ▲  │                                      
-                                save user │    │            │  │ refresh token                        
-                                          │    │   new token│  │                                      
-                                          ▼    ▼            │  ▼                                      
-                                       ┌──────────┐  ┌──────┴───────────┐                             
-                                       │          │  │                  │                             
-                                       │ Keychain │  │Token Swap Service│                             
-                                       │          │  │                  │                             
-                                       └──────────┘  └──────────────────┘                             
+                                                                                            
+                          ┌──────────────────────┐           ┌────────────────────────┐     
+                          │                      │           │                        │     
+                          │      LoginView       │           │      SpotifyView       │     
+                          │                      │           │                        │     
+  ┌──────────────────────▶├──────────────────────┼──────────▶├────────────────────────┤     
+  │                       │                      │           │                        │     
+  │                       │ LoginViewController  │           │ SpotifyViewController  │     
+  │                       │                      │           │                        │     
+  │                       └──────────────────────┘           └────────────────────────┘     
+  │                                   │                                                     
+  │                                   │                                                     
+  │                                   │ create session                                      
+  │                                   │                                                     
+  │                                   ▼                                                     
+  │                       ┌──────────────────────┐  openURL  ┌────────────────────────┐     
+  │                       │                      │◀──────────┤                        │     
+  │                       │    LoginViewModel    │           │      AppDelegate       │     
+  │                       │                      ├──────────▶│                        │     
+  │                       └──────────────────────┘           └────────────────────────┘     
+  │                                   │             handleAuthCallBackWithTriggeredAuthURL  
+  │                                   │                                                     
+  │                                   │                                                     
+  │                                   │ set session                                         
+  │ session lifecycle notifications   │                                                     
+  │                                   ▼                                                     
+  │                       ┌──────────────────────┐                                          
+  │                       │                      │                                          
+  └───────────────────────│   User (Singleton)   │                                          
+                          │                      │                                          
+                          └──────────────────────┘                                          
+                                   ▲  │                                                     
+                                   │  │                                                     
+                                   │  │ refresh token                                       
+                         new token │  │                                                     
+                                   │  ▼                                                     
+                          ┌────────┴─────────────┐                                          
+                          │                      │                                          
+                          │  Token Swap Service  │                                          
+                          │                      │                                          
+                          └──────────────────────┘                                                                    
 ```
 
 ## License
