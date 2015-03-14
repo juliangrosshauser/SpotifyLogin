@@ -68,11 +68,11 @@ After that you can run the service with `ruby spotify_token_swap.rb`.
   │                                   │                                                     
   │                                   │ create session                                      
   │                                   │                                                     
-  │                                   ▼                                                     
-  │                       ┌──────────────────────┐  openURL  ┌────────────────────────┐     
-  │                       │                      │◀──────────┤                        │     
-  │                       │    LoginViewModel    │           │      AppDelegate       │     
+  │                                   ▼             openURL                                 
+  │                       ┌──────────────────────┐           ┌────────────────────────┐     
   │                       │                      ├──────────▶│                        │     
+  │                       │    LoginViewModel    │           │      AppDelegate       │     
+  │                       │                      │◀──────────┤                        │     
   │                       └──────────────────────┘           └────────────────────────┘     
   │                                   │             handleAuthCallBackWithTriggeredAuthURL  
   │                                   │                                                     
@@ -94,7 +94,7 @@ After that you can run the service with `ruby spotify_token_swap.rb`.
                           │                      │                                          
                           │  Token Swap Service  │                                          
                           │                      │                                          
-                          └──────────────────────┘                                                                    
+                          └──────────────────────┘                                                                                                             
 ```
 
 ## License
