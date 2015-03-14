@@ -9,6 +9,21 @@ In order to run this project you need to checkout Spotify's iOS framework with [
 $ carthage update --no-build
 ```
 
+## Spotify App
+
+In order to run this app you have to add a file called `SpotifyApp.swift` in `SpotifyLogin/Other Sources`.
+This file should contain the following:
+
+``` swift
+struct SpotifyApp {
+    static let clientID: String = "your-client-id";
+    static let callbackURL: String = "your-callback-url";
+    static let tokenSwapURL: String = "http://localhost:1234/swap";
+}
+```
+
+You can obtain `clientID` and `callbackURL` after you created a new app on Spotify's [My Applications](http://developer.spotify.com/my-applications) page.  
+
 ## TokenSwapService
 
 > The iOS SDK uses OAuth to authenticate the application user and to authorize your application to access the Spotify service.
