@@ -3,8 +3,6 @@
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/devcenter/ios/index.action)
 [![License](https://img.shields.io/badge/license-MIT-3f3f3f.svg)](http://choosealicense.com/licenses/mit)
 
-**Note:** This project needs Xcode 6.3 (Swift 1.2) in order to compile correctly.
-
 In order to run this project you need to checkout Spotify's iOS framework with [Carthage](https://github.com/Carthage/Carthage) first:
 
 ```shell
