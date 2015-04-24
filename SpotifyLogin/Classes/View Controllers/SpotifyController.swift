@@ -31,7 +31,7 @@ class SpotifyController: UIViewController {
         label.center = self.view.center
         self.view.addSubview(label)
 
-        let logoutButton = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout")
+        let logoutButton = UIBarButtonItem(title: "Logout", style: .Plain, target: self, action: "logout")
         self.navigationItem.leftBarButtonItem = logoutButton
     }
 

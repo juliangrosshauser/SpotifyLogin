@@ -26,8 +26,8 @@ class LoginController: UIViewController {
         notificationCenter.addObserverForName(self.viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
             let error = notification.object as! NSError
 
-            let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
-            let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .Alert)
+            let alertAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(alertAction)
 
             self.presentViewController(alertController, animated: true, completion: nil)
@@ -51,11 +51,11 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        loginButton.setTitle("Login with Spotify", forState: UIControlState.Normal)
+        let loginButton = UIButton.buttonWithType(.System) as! UIButton
+        loginButton.setTitle("Login with Spotify", forState: .Normal)
         loginButton.sizeToFit()
         loginButton.center = self.view.center
-        loginButton.addTarget(self.viewModel, action: "createSession", forControlEvents: UIControlEvents.TouchUpInside)
+        loginButton.addTarget(self.viewModel, action: "createSession", forControlEvents: .TouchUpInside)
         self.view.addSubview(loginButton)
     }
 }
