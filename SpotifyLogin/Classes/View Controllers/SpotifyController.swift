@@ -12,7 +12,7 @@ class SpotifyController: UIViewController {
 
     //MARK: Initialization
 
-    override init() {
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
 

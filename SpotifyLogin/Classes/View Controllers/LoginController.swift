@@ -16,7 +16,7 @@ class LoginController: UIViewController {
 
     //MARK: Initialization
 
-    override init() {
+    init() {
         super.init(nibName: nil, bundle: nil)
 
         self.title = "Login with Spotify"
