@@ -19,7 +19,7 @@ class User {
         didSet {
             let notificationCenter = NSNotificationCenter.defaultCenter()
 
-            if let newSession = session {
+            if let session = session {
                 notificationCenter.postNotificationName(User.sessionUpdatedNotification, object: nil)
             } else {
                 notificationCenter.postNotificationName(User.sessionRemovedNotification, object: nil)

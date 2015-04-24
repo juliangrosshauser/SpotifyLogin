@@ -26,7 +26,7 @@ class LoginViewModel {
         if (SPTAuth.defaultInstance().canHandleURL(url)) {
             // Call the token swap service to get a logged in session
             SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url) { (error, session) in
-                if let sessionCreationError = error {
+                if let error = error {
                     let notificationCenter = NSNotificationCenter.defaultCenter()
                     notificationCenter.postNotificationName(self.loginFailedNotification, object: error)
                 } else {
