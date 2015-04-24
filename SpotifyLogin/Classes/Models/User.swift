@@ -15,7 +15,7 @@ class User {
 
     static let sharedInstance = User()
 
-    var session: SPTSession? = nil {
+    var session: SPTSession? {
         didSet {
             let notificationCenter = NSNotificationCenter.defaultCenter()
 
