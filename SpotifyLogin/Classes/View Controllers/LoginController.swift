@@ -24,7 +24,7 @@ class LoginController: UIViewController {
         let notificationCenter = NSNotificationCenter.defaultCenter()
         
         notificationCenter.addObserverForName(self.viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
-            let error = notification.object as! NSError!
+            let error = notification.object as! NSError
 
             let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
             let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
