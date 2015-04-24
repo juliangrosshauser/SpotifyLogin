@@ -17,16 +17,15 @@ class LoginViewModel {
     @objc
     func createSession() {
         // Create SPTAuth instance; create login URL and open it
-        let loginURL: NSURL = SPTAuth.defaultInstance().loginURLForClientId(SpotifyApp.clientID, declaredRedirectURL: NSURL(string: SpotifyApp.callbackURL), scopes: [SPTAuthStreamingScope])
+        let loginURL: NSURL = SPTAuth.loginURLForClientId(SpotifyApp.clientID, withRedirectURL: NSURL(string: SpotifyApp.callbackURL), scopes: [SPTAuthStreamingScope], responseType: "code")
         UIApplication.sharedApplication().openURL(loginURL)
     }
 
     func handleAuthCallBackWithTriggeredAuthURL(url: NSURL) -> Bool {
         // Ask SPTAuth if the URL given is a Spotify authentication callback
-        if (SPTAuth.defaultInstance().canHandleURL(url, withDeclaredRedirectURL: NSURL(string: SpotifyApp.callbackURL))) {
+        if (SPTAuth.defaultInstance().canHandleURL(url)) {
             // Call the token swap service to get a logged in session
-            SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, tokenSwapServiceEndpointAtURL: NSURL(string: SpotifyApp.tokenSwapURL)) {
-                (error, session) in
+            SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url) { (error, session) in
                 if let sessionCreationError = error {
                     let notificationCenter = NSNotificationCenter.defaultCenter()
                     notificationCenter.postNotificationName(self.loginFailedNotification, object: error)
