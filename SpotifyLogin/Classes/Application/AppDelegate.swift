@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var window: UIWindow? = {
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window.backgroundColor = UIColor.whiteColor()
+        window.backgroundColor = .whiteColor()
         window.rootViewController = UINavigationController(rootViewController: LoginController())
         return window
     }()
