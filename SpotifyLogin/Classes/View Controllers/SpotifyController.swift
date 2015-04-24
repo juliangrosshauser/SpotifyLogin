@@ -25,13 +25,13 @@ class SpotifyController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let label: UILabel = UILabel()
+        let label = UILabel()
         label.text = "Successfully created Spotify session"
         label.sizeToFit()
         label.center = self.view.center
         self.view.addSubview(label)
 
-        let logoutButton: UIBarButtonItem = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout")
+        let logoutButton = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout")
         self.navigationItem.leftBarButtonItem = logoutButton
     }
 

@@ -12,7 +12,7 @@ class LoginController: UIViewController {
 
     //MARK: Properties
 
-    let viewModel: LoginViewModel = LoginViewModel()
+    let viewModel = LoginViewModel()
 
     //MARK: Initialization
 
@@ -24,10 +24,10 @@ class LoginController: UIViewController {
         let notificationCenter = NSNotificationCenter.defaultCenter()
         
         notificationCenter.addObserverForName(self.viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
-            let error: NSError = notification.object as! NSError!
+            let error = notification.object as! NSError!
 
-            let alertController: UIAlertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
-            let alertAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+            let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(alertAction)
 
             self.presentViewController(alertController, animated: true, completion: nil)
@@ -51,7 +51,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginButton: UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        let loginButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
         loginButton.setTitle("Login with Spotify", forState: UIControlState.Normal)
         loginButton.sizeToFit()
         loginButton.center = self.view.center

@@ -10,10 +10,10 @@ class User {
 
     //MARK: Properties
 
-    static let sessionUpdatedNotification: String = "SessionUpdatedNotification"
-    static let sessionRemovedNotification: String = "SessionRemovedNotification"
+    static let sessionUpdatedNotification = "SessionUpdatedNotification"
+    static let sessionRemovedNotification = "SessionRemovedNotification"
 
-    static let sharedInstance: User = User()
+    static let sharedInstance = User()
 
     var session: SPTSession? = nil {
         didSet {

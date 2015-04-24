@@ -10,14 +10,14 @@ class LoginViewModel {
 
     //MARK: Properties
 
-    let loginFailedNotification: String = "LoginFailedNotification"
+    let loginFailedNotification = "LoginFailedNotification"
 
     //MARK: Login
 
     @objc
     func createSession() {
         // Create SPTAuth instance; create login URL and open it
-        let loginURL: NSURL = SPTAuth.loginURLForClientId(SpotifyApp.clientID, withRedirectURL: NSURL(string: SpotifyApp.callbackURL), scopes: [SPTAuthStreamingScope], responseType: "code")
+        let loginURL = SPTAuth.loginURLForClientId(SpotifyApp.clientID, withRedirectURL: NSURL(string: SpotifyApp.callbackURL), scopes: [SPTAuthStreamingScope], responseType: "code")
         UIApplication.sharedApplication().openURL(loginURL)
     }
 
