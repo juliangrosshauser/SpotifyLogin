@@ -28,11 +28,11 @@ class SpotifyController: UIViewController {
         let label = UILabel()
         label.text = "Successfully created Spotify session"
         label.sizeToFit()
-        label.center = self.view.center
-        self.view.addSubview(label)
+        label.center = view.center
+        view.addSubview(label)
 
         let logoutButton = UIBarButtonItem(title: "Logout", style: .Plain, target: self, action: "logout")
-        self.navigationItem.leftBarButtonItem = logoutButton
+        navigationItem.leftBarButtonItem = logoutButton
     }
 
     //MARK: Session Lifecycle

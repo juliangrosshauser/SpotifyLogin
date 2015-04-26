@@ -23,14 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: UIApplicationDelegate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.window?.makeKeyAndVisible()
+        window?.makeKeyAndVisible()
         
         return true
     }
 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         if let
-            window = self.window,
+            window = window,
             rootViewController = window.rootViewController as? UINavigationController,
             loginController = rootViewController.topViewController as? LoginController {
                 return loginController.viewModel.handleAuthCallBackWithTriggeredAuthURL(url)

@@ -19,11 +19,11 @@ class LoginController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
 
-        self.title = "Login with Spotify"
+        title = "Login with Spotify"
 
         let notificationCenter = NSNotificationCenter.defaultCenter()
         
-        notificationCenter.addObserverForName(self.viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
+        notificationCenter.addObserverForName(viewModel.loginFailedNotification, object: nil, queue: nil) { (notification) in
             let error = notification.object as! NSError
 
             let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .Alert)
@@ -34,11 +34,11 @@ class LoginController: UIViewController {
         }
 
         notificationCenter.addObserverForName(User.sessionUpdatedNotification, object: nil, queue: nil) { (notification) in
-            self.navigationController?.pushViewController(SpotifyController(), animated: true)
+            navigationController?.pushViewController(SpotifyController(), animated: true)
         }
 
         notificationCenter.addObserverForName(User.sessionRemovedNotification, object: nil, queue: nil) { (notification) in
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            navigationController?.popToRootViewControllerAnimated(true)
         }
     }
 
@@ -54,8 +54,8 @@ class LoginController: UIViewController {
         let loginButton = UIButton.buttonWithType(.System) as! UIButton
         loginButton.setTitle("Login with Spotify", forState: .Normal)
         loginButton.sizeToFit()
-        loginButton.center = self.view.center
-        loginButton.addTarget(self.viewModel, action: "createSession", forControlEvents: .TouchUpInside)
-        self.view.addSubview(loginButton)
+        loginButton.center = view.center
+        loginButton.addTarget(viewModel, action: "createSession", forControlEvents: .TouchUpInside)
+        view.addSubview(loginButton)
     }
 }
