@@ -32,18 +32,18 @@ You can obtain `clientID` and `callbackURL` after you created a new app on Spoti
 Source: [Spotify iOS SDK Tutorial](https://developer.spotify.com/technologies/spotify-ios-sdk/tutorial)
 
 You can find all necessary files for this token exchange service in the [TokenSwapService](TokenSwapService) folder.  
-The only thing you need to add is the `secrets.rb` file. This file should contain the following:
+The only thing you need to do is to set the following environment variables:
 
-```ruby
-CLIENT_ID = 'client_id'
-CLIENT_SECRET = 'client_secret'
-ENCRYPTION_SECRET = 'encryption_secret'
-CLIENT_CALLBACK_URL = 'jgh-spotify-session-manager://client-callback-url'
+```shell
+export SPOTIFY_CLIENT_ID='client_id'
+export SPOTIFY_CLIENT_SECRET='client_secret'
+export SPOTIFY_ENCRYPTION_SECRET='encryption_secret'
+export SPOTIFY_CLIENT_CALLBACK_URL='jgh-spotify-session-manager://client-callback-url'
 ```
 
-You can obtain `CLIENT_ID` and `CLIENT_SECRET` after you created a new app on Spotify's [My Applications](http://developer.spotify.com/my-applications) page.  
-On that page you can also set the `CLIENT_CALLBACK_URL`.  
-`ENCRYPTION_SECRET` is just a random string, so it's content is entirely up to you.
+You can obtain `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` after you created a new app on Spotify's [My Applications](http://developer.spotify.com/my-applications) page.  
+On that page you can also set the `SPOTIFY_CLIENT_CALLBACK_URL`.  
+`SPOTIFY_ENCRYPTION_SECRET` is just a random string, so it's content is entirely up to you.
 
 Before you can run the service, make sure you have [`bundler`](http://bundler.io) installed.  
 To install the service's dependencies run `bundle install`.  

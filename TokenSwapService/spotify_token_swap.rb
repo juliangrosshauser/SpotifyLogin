@@ -8,9 +8,7 @@ require 'base64'
 require 'json'
 require 'encrypted_strings'
 
-require_relative 'secrets'
-
-AUTH_HEADER = 'Basic ' + Base64.strict_encode64(CLIENT_ID + ':' + CLIENT_SECRET)
+AUTH_HEADER = 'Basic ' + Base64.strict_encode64(ENV["SPOTIFY_CLIENT_ID"] + ':' + ENV["SPOTIFY_CLIENT_SECRET"])
 SPOTIFY_ACCOUNTS_ENDPOINT = URI.parse('https://accounts.spotify.com')
 
 set :port, 1234 # The port to bind to.
@@ -34,7 +32,7 @@ post '/swap' do
 
   request.form_data = {
     'grant_type' => 'authorization_code',
-    'redirect_uri' => CLIENT_CALLBACK_URL,
+    'redirect_uri' => ENV["SPOTIFY_CLIENT_CALLBACK_URL"],
     'code' => auth_code
   }
 
@@ -45,7 +43,7 @@ post '/swap' do
     token_data = JSON.parse(response.body)
     refresh_token = token_data['refresh_token']
     encrypted_token = refresh_token.encrypt(:symmetric,
-                                            :password => ENCRYPTION_SECRET)
+                                            :password => ENV["SPOTIFY_ENCRYPTION_SECRET"])
     token_data['refresh_token'] = encrypted_token
     response.body = JSON.dump(token_data)
   end
@@ -67,7 +65,7 @@ post '/refresh' do
 
   encrypted_token = params[:refresh_token]
   refresh_token = encrypted_token.decrypt(:symmetric,
-                                          :password => ENCRYPTION_SECRET)
+                                          :password => ENV["SPOTIFY_ENCRYPTION_SECRET"])
 
   request.form_data = {
     'grant_type' => 'refresh_token',

@@ -3,5 +3,4 @@ xcuserdata
 xcshareddata
 Carthage
 SpotifyApp.swift
-TokenSwapService/secrets.rb
 *.monopic
