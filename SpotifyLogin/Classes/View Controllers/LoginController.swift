@@ -14,6 +14,16 @@ class LoginController: UIViewController {
 
     let viewModel = LoginViewModel()
 
+    let loginButton: UIButton = {
+        let button = UIButton()
+
+        button.setTitle("Login with Spotify", forState: .Normal)
+        button.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        button.sizeToFit()
+
+        return button
+    }()
+
     //MARK: Initialization
 
     init() {
@@ -51,9 +61,6 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginButton = UIButton.buttonWithType(.System) as! UIButton
-        loginButton.setTitle("Login with Spotify", forState: .Normal)
-        loginButton.sizeToFit()
         loginButton.center = view.center
         loginButton.addTarget(viewModel, action: "createSession", forControlEvents: .TouchUpInside)
         view.addSubview(loginButton)
