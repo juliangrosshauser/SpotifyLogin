@@ -16,9 +16,11 @@ This file should contain the following:
 
 ``` swift
 struct SpotifyApp {
-    static let clientID: String = "your-client-id";
-    static let callbackURL: String = "your-callback-url";
-    static let tokenSwapURL: String = "http://localhost:1234/swap";
+    static let clientID: String = "your-client-id"
+    static let callbackURL: String = "your-callback-url"
+    static let tokenSwapURL: String = "http://localhost:1234/swap"
+    static let tokenRefreshURL = "http://localhost:1234/refresh"
+    static let sessionUserDefaultsKey = "SpotifySession"
 }
 ```
 
