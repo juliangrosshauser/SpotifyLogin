@@ -23,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: UIApplicationDelegate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let authentication = SPTAuth.defaultInstance()
+
+        authentication.clientID = SpotifyApp.clientID
+        authentication.redirectURL = NSURL(string: SpotifyApp.callbackURL)
+        authentication.tokenSwapURL = NSURL(string: SpotifyApp.tokenSwapURL)
+        authentication.tokenRefreshURL = NSURL(string: SpotifyApp.tokenRefreshURL)
+        authentication.requestedScopes = [SPTAuthStreamingScope]
+        
         window?.makeKeyAndVisible()
         
         return true
