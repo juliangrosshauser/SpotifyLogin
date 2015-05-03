@@ -8,7 +8,7 @@ require 'base64'
 require 'json'
 require 'encrypted_strings'
 
-AUTH_HEADER = 'Basic ' + Base64.strict_encode64(ENV["SPOTIFY_CLIENT_ID"] + ':' + ENV["SPOTIFY_CLIENT_SECRET"])
+AUTH_HEADER = "Basic #{Base64.strict_encode64("#{ENV['SPOTIFY_CLIENT_ID']}:#{ENV['SPOTIFY_CLIENT_SECRET']}")}"
 SPOTIFY_ACCOUNTS_ENDPOINT = URI.parse('https://accounts.spotify.com')
 
 set :port, 1234 # The port to bind to.
