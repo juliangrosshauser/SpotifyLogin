@@ -61,8 +61,11 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.center = view.center
         loginButton.addTarget(viewModel, action: "createSession", forControlEvents: .TouchUpInside)
         view.addSubview(loginButton)
+    }
+
+    override func viewWillLayoutSubviews() {
+        loginButton.center = view.center
     }
 }
