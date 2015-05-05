@@ -66,6 +66,8 @@ class LoginController: UIViewController {
     }
 
     override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+
         loginButton.center = view.center
     }
 }
