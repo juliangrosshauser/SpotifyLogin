@@ -51,52 +51,6 @@ Before you can run the service, make sure you have [`bundler`](http://bundler.io
 To install the service's dependencies run `bundle install`.  
 After that you can run the service with `ruby spotify_token_swap.rb`.
 
-## Architecture
-
-```
-                                                                                            
-                          ┌──────────────────────┐           ┌────────────────────────┐     
-                          │                      │           │                        │     
-                          │      LoginView       │           │      SpotifyView       │     
-                          │                      │           │                        │     
-  ┌──────────────────────▶├──────────────────────┼──────────▶├────────────────────────┤     
-  │                       │                      │           │                        │     
-  │                       │ LoginViewController  │           │ SpotifyViewController  │     
-  │                       │                      │           │                        │     
-  │                       └──────────────────────┘           └────────────────────────┘     
-  │                                   │                                                     
-  │                                   │                                                     
-  │                                   │ create session                                      
-  │                                   │                                                     
-  │                                   ▼             openURL                                 
-  │                       ┌──────────────────────┐           ┌────────────────────────┐     
-  │                       │                      ├──────────▶│                        │     
-  │                       │    LoginViewModel    │           │      AppDelegate       │     
-  │                       │                      │◀──────────┤                        │     
-  │                       └──────────────────────┘           └────────────────────────┘     
-  │                                   │             handleAuthCallBackWithTriggeredAuthURL  
-  │                                   │                                                     
-  │                                   │                                                     
-  │                                   │ set session                                         
-  │ session lifecycle notifications   │                                                     
-  │                                   ▼                                                     
-  │                       ┌──────────────────────┐                                          
-  │                       │                      │                                          
-  └───────────────────────│   User (Singleton)   │                                          
-                          │                      │                                          
-                          └──────────────────────┘                                          
-                                   ▲  │                                                     
-                                   │  │                                                     
-                                   │  │ refresh token                                       
-                         new token │  │                                                     
-                                   │  ▼                                                     
-                          ┌────────┴─────────────┐                                          
-                          │                      │                                          
-                          │  Token Swap Service  │                                          
-                          │                      │                                          
-                          └──────────────────────┘                                                                                                             
-```
-
 ## License
 
 [MIT](LICENSE)
