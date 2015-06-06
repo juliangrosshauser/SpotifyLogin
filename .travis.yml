@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: beta-xcode6.3
+xcode_project: SpotifyLogin.xcodeproj
+xcode_scheme: SpotifyLogin
+xcode_sdk: iphonesimulator8.3
+before_install:
+  - brew update
+  - brew upgrade --all
+  - brew install carthage
+install: carthage bootstrap --no-build
